@@ -1,0 +1,31 @@
+<form [formGroup] = "Registerform" (ngSubmit)="onSubmit()" >
+<div>
+    <h2>Fill the details to Register</h2>
+<br>
+<label>First Name :  </label>
+<input type="text" placeholder="Enter first name" formControlName ="firstname"> <br>
+<p *ngIf="firstname?.touched && firstname?.errors?.['required']" > Firstname is required </p>
+
+<br>
+<label>Last Name :  </label>
+<input type="text" placeholder="Enter last name" formControlName ="lastname"> <br>
+<p *ngIf="lastname?.touched && lastname?.errors?.['required']"  >lastname is required</p>
+
+<br>
+<label>Phone Number :  </label>
+<input type="number" placeholder="Enter phno" formControlName ="phno"> <br>
+<p *ngIf="phno?.touched && phno?.errors?.['required']"  > phno is required </p>
+
+<br>
+<label>Email Address :  </label>
+<input type="email" placeholder="Enter valid email" formControlName ="email"> <br>
+<p *ngIf="email?.touched && email?.errors?.['required']" > email is required </p>
+    <p *ngIf= "email?.errors?.['minlength']" > email should be alteast 3 characters above </p>
+<br>
+<label>Enter Password:  </label>
+<input type="password" placeholder="Enter password" formControlName ="password"> <br>
+<p *ngIf="password?.touched && password?.errors?.['required']"  > password is required </p>
+<br>
+<button>Register</button> <br>
+</div>
+</form>

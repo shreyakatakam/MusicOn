@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'roboto', sans-serif;
+    background-color:#5f7a61;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    width:100%;
+    height:100vh;
+}
+
+.music-player {
+    width: 350px;
+    height: 550px;
+    background-color:rgba(255,255,255,0.08);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 40px 100px rgba(255,255,255, 0.1);
+    text-align: center;
+    overflow: hidden;
+}
+.music-name,
+.artist-name{
+    text-align:center;
+    text-transform: capitalize;
+}
+.music-name{
+    font-size:40px;
+    font-weight:500;
+    margin-bottom:10px;
+}
+.artist-name{
+    font-size:20px;
+}
+.disk {
+    position:relative;
+    display:block;
+    margin:40px auto;
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background-image:url("https://cdn.xxl.thumbs.canstockphoto.com/music-energy-clipping-path-xxl-music-energy-clipping-path-for-easy-placing-your-text-behind-stock-photograph_csp0593999.jpg");
+    background-size: cover;
+    box-shadow: 0 0 0 10px rgba(255,255,255,0.08);
+    animation: spin 2s linear infinite;
+    animation-play-state: paused;
+}
+.disk.play{
+    animation-play-state:running;
+}
+.disk::before{
+    content:'';
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    background: #5f7a61;
+}
+.seek-bar{
+    
+    width:100%;
+    height:5px;
+    border-radius: 10px;
+    background: #d5eebb;
+    cursor:pointer;
+}
+.current-time,
+.song-duration{
+    font-size: 14px;
+}
+.song-duration{
+    position: absolute;
+    right:0;
+}
+.controls{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.song-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    position: relative;
+}
+
+
+.play-btn{
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+    background-color: #d5eebb;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.play-btn.pause{
+    transform: translateY(-50%) scaleY(0);
+}
+
+.btn.backward-btn{
+    width:40px;
+    height: 40px;
+    border-radius: 60%;
+    background: #d5eebb;
+    display: flex;
+    align-items: center;
+    border:none;
+    justify-content: center;
+    cursor:pointer;
+    
+}
+
+.btn.forward-btn{
+    width:40px;
+    height: 40px;
+    border-radius: 60%;
+    background: #d5eebb;
+    display: flex;
+    align-items: center;
+    border:none;
+    justify-content: center;
+    cursor:pointer;
+}

@@ -1,0 +1,9 @@
+<h2>Add Songs to Favorites</h2>
+
+<ul>
+  <li *ngFor="let song of songs">
+    {{ song.songName }}
+    <button (click)="addSongToFolder(song)">Add To Favorites</button>
+  </li>
+</ul>
+

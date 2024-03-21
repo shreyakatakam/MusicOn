@@ -1,0 +1,34 @@
+<h1>Add Song</h1>
+<div class="show">
+<form  [formGroup]="addvehicle" name="loginForm" >
+  
+      <div class="songs">
+      SongId:  <input type="text"  name="songId" placeholder="enter songId" formControlName="songId">
+        <p *ngIf="songId?.touched && songId?.errors?.['required']">it is required</p>
+       <br>
+      
+      SongName:  <input  type="text"  name="songName" placeholder="enter songName" formControlName="songName"> 
+      <p *ngIf="songName?.touched && songName?.errors?.['required']">it is required</p> <br>
+      
+      
+      Singer: <input type="text"  name="singer" placeholder="enter singer" formControlName="singer"> 
+        <p *ngIf="singer?.touched && singer?.errors?.['required']">it is required</p>
+      <br>
+
+     
+      Moviename:  <input type="text"  name="moviename" placeholder="enter movie" formControlName="moviename"> 
+        <p *ngIf="moviename?.touched && moviename?.errors?.['required']">it is required</p>
+      <br><br>
+
+
+      <div class="btn">
+        <button  [disabled]="!addvehicle.valid" (click)=" AddVehicleData()" >Add Song</button>
+    </div><br>
+
+
+    <div class="btn">
+      <button  (click)="back()">Go Back</button>
+  </div>
+  </div>
+  </form>
+</div>

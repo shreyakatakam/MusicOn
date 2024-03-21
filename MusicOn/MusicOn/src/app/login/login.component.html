@@ -1,0 +1,24 @@
+<div class="container">
+    <h1>MUSICON</h1>
+    <ul class="links">
+      <li class="l1"><a routerLink="/about">About</a></li>
+      <li class="l2"><a routerLink="/contact-us">Contact us</a></li>
+    </ul>
+</div>
+<div class="cover">
+    <div class="home">
+        <form [formGroup] = "Loginform" (ngSubmit)="onSubmit()" >
+            <input type="email" placeholder="Enter email" class="head" formControlName ="email"> 
+            <p *ngIf="email?.touched && email?.errors?.['required']" > email is required </p>
+            <p *ngIf= "email?.errors?.['minlength']" > email should be alteast 3 characters above </p>
+             <br>
+                <br> <input type="password" placeholder="Enter password" formControlName ="password" > <br>
+                <p *ngIf="password?.touched && password?.errors?.['required']"  > password is required </p>
+                 <br> <button type="submit" >Login</button>
+                <h4>Not a registered user?
+                    <a routerLink="/register">Register</a>
+                    </h4>
+        </form>
+    </div>
+        
+</div>

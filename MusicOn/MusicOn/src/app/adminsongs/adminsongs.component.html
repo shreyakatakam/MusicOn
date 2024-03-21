@@ -1,0 +1,25 @@
+
+    <h1>Admin Songs</h1>
+    <button id="btn" (click)="back()">Exit</button> <br> <button id="add" type="submit" routerLink="/addsongs">AddSong</button>
+ <div id="bod">
+   <body>
+    <div class="card-content"  id="card" *ngFor="let n of notes">   
+        <p>SongId: <strong>{{n.songId}}</strong></p><hr>
+        <p>SongName: <strong> {{n.songName}}</strong></p>
+        <p>Singer: <strong> {{n.singer}}</strong></p>
+        <p>MovieName: <strong>{{n.moviename}}</strong></p>
+              <button (click)="play()">Play</button>
+                <button (click)="delete(n.songId)">Delete</button> 
+
+
+    </div>  
+   </body>
+   </div>
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,70 @@
+.head{
+    align-items: center;
+    justify-content: center;
+}
+/* Apply general styling to the contact form container */
+.head {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Style the heading */
+  h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the subheading */
+  h3 {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the input field for describing the issue */
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Style the navigation links */
+  .nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav li {
+    margin-bottom: 10px;
+  }
+  
+  .nav a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .nav a:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .nav a:focus {
+    outline: none;
+  }
+  
+  .nav a:active {
+    background-color: #0056b3;
+  }
+  

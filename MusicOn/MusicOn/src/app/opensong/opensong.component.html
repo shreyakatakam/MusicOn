@@ -1,0 +1,19 @@
+<body>
+<div class="music-player">
+   <h1 class="music-name">{{ songs[currentMusicIndex]?.songName }}</h1>
+   <p class="artist-name">{{ songs[currentMusicIndex]?.singer }}</p>
+ 
+   <div class="disk" [style.background-image]="'url(' + songs[currentMusicIndex]?.cover + ')'" [class.play]="isPlaying"></div>
+   <div class="song-slider">
+     <input type="range" [(ngModel)]="audio.currentTime" [max]="audio.duration" [value]="audio.currentTime" step="0.1">
+     <span class="current-time">{{ formatTime(audio.currentTime) }}</span>
+     <span class="song-duration">{{ formatTime(audio.duration) }}</span>
+   </div>
+   <div class="controls">  
+     <button class="btn backward-btn" (click)="backward()">&lt;&lt;</button>
+     <button class="play-btn" (click)="playPause()">&#9658;</button>
+     <button class="btn forward-btn" (click)="forward()">&gt;&gt;</button>
+   </div>
+ </div>
+</body>
+  +

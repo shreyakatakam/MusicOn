@@ -1,0 +1,21 @@
+<div class="cover">
+    <div id="head">
+        <button id="btn-create-folder" (click)="createFolder()">Create Folder</button>
+        <button id="btn-back" (click)="back()">Back</button>
+    </div>
+
+<h1>Displaying Songs</h1>
+ <div >
+    <div id="card" *ngFor="let n of notes">
+      
+        <p>SongId: <strong>{{n.songId}}</strong></p><hr>
+        <p>SongName: <strong>{{n.songName}}</strong></p>
+        
+        <p>Singer: <strong> {{n.singer}}</strong></p>
+        <p>Moviename:<strong> {{n.moviename}}</strong></p>
+        <button (click)="play()">Play</button>    <button (click)="addToFavorites()">Add To Favorites</button>
+    </div>
+</div>
+ </div>
+ 
+  

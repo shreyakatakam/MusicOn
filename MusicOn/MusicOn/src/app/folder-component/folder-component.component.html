@@ -1,0 +1,19 @@
+<div class="head">
+<h2>Create New Folder</h2>
+<label>Folder Name  :</label> <br>
+ <br><input type="text" [(ngModel)]="newFolderName" placeholder="Folder Name" /> <br>
+ <br><label > Password  :</label>  <br>
+<br> <input type="password" [(ngModel)]="newFolderPassword" placeholder="Folder Password" /> <br>
+<br><button (click)="createFolder()">Create Folder</button>
+<button (click)="verifyPassword()">Verify Folder</button>
+<h2>Existing Folders</h2>
+<div *ngFor="let folder of folders">
+    <h3>{{ folder.name }}</h3>
+    <ul>
+      <li *ngFor="let song of folder.songs">
+        {{ song.songName }} - {{ song.singer }} ({{ song.movieName }})
+      </li>
+    </ul>
+     <br> <button (click)="openFolder()">Open Folder</button>
+  </div>
+  </div>

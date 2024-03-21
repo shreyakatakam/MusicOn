@@ -1,0 +1,67 @@
+h1{
+    text-align: center;
+    font-style:unset;
+    color: black;
+}
+.home{
+    margin-top: -30px;
+    margin-left:750px;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    margin-left:55px;
+    background-color: cornflowerblue;
+}
+.cover{
+    background: url("https://cdn.wallpapersafari.com/84/7/Dc8Syh.jpeg")no-repeat;
+    background-size: cover;
+    height:750px;
+    margin-left: -80px;
+    margin-right: -200px;
+    color: aliceblue;
+}
+input{
+    border-top: hidden;
+    color: rgb(84, 90, 203);
+    background-color: lemonchiffon;
+    height: 20px;
+    margin-top: 20px;
+}
+.head{
+    margin-top: 50px;
+}
+h4{
+    color: beige;
+}
+p{
+    color: crimson;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  } 
+  .links {
+    display: flex;
+    gap:40px;
+  }
+  
+  .links li {
+    padding: 0;
+  }
+  
+  .links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .links a:hover {
+    color: beige;
+  }
+  .container{
+    margin-top: -20px;
+  }
+  
+
+  

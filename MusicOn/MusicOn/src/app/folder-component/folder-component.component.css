@@ -1,0 +1,130 @@
+
+/* styles.css */
+
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Center alignment for the container */
+  .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styling for headings */
+  h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  
+  /* Styling for form elements */
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  /* Styling for buttons */
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px; /* Add margin between buttons vertically */
+  }
+  
+  button:last-child {
+    margin-right: 0;
+  }
+  
+  
+  button:hover {
+    background-color: #0056b3;
+
+  }
+  
+  /* Styling for the list of folders */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  /* Styling for the open folder button */
+  button.open-folder {
+    background-color: #28a745;
+  }
+  
+  button.open-folder:hover {
+    background-color: #1c7430;
+  }
+  
+  /* Styling for alert messages */
+  .alert {
+    padding: 10px;
+    background-color: #f44336;
+    color: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    display: none;
+  }
+  
+  .alert.success {
+    background-color: #4caf50;
+  }
+  
+  /* Additional realistic styling */
+  .head {
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  button.create-folder {
+    background-color: #ff9800;
+  }
+  
+  button.create-folder:hover {
+    background-color: #f57c00;
+  }
+  
+  button.verify-folder {
+    background-color: #e91e63;
+  }
+  
+  button.verify-folder:hover {
+    background-color: #c2185b;
+  }
+  
+  /* Add more styles for other elements as needed */
+  
